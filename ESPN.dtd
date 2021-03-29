@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/ESPN.dtd
+
+-->
+
+<!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE partidos SYSTEM "ESPN.dtd">
+
+    <partidos>
+    ...
+    </partidos>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT partidos (partido)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT partido (contricantes|ganador|anotaciones)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT contricantes (equipo1|equipo2)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT equipo1 (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT equipo2 (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT ganador (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT anotaciones (anotacionesEquipo1|anotacionesEquipo2)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT anotacionesEquipo1 (#PCDATA)>
+<!ATTLIST anotacionesEquipo1
+    total CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT anotacionesEquipo2 (#PCDATA)>
+<!ATTLIST anotacionesEquipo2
+    total CDATA #IMPLIED
+  >

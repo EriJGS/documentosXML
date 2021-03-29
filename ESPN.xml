@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE partidos SYSTEM "ESPN.dtd">
+
+<!--
+DESARROLLO III (27 de marzo de 2021) - Tarea: Desarrollo de documentos XML
+
+En la sitio web espn.com.mx/futbol/resultados se muestran los resultados y estadísticas de los juegos de las diferentes
+ligas de fútbol del mundo. Queremos contar con documento XML que permita representar los resultados de los partidos que
+se jugaron en el torneo de la Liga BBVA MX.
+
+Crear un documento XML para representar los resultados de una fecha en particular (e.g. Domingo 21 de Marzo 2021).
+Validar que el documento esté bien formado (well formed). Interesa conocer: la fecha de los partidos, que equipos
+se enfrentaron, el marcador final del encuentro, que jugadores anotaron y en que minuto del partido.
+
+Crear el documento DTD para validar el documento XML con los resultados de los partidos.
+-->
+
+<partidos>
+    <partido>
+        <contricantes>
+            <equipo1>Toluca</equipo1>
+            <equipo2>Puebla</equipo2>   
+        </contricantes>
+        <ganador>Empate</ganador>
+        <anotaciones>
+            <anotacionesEquipo1 total="4">M Estrada(33',88'), P Canelo(54'PEN), Diego(78')</anotacionesEquipo1>
+            <anotacionesEquipo2 total="4">S Ormeño(58'PEN), J Segovia(61'), D Aguilar(87'), D Álvarez(90')</anotacionesEquipo2>
+        </anotaciones>
+    </partido>
+        
+    <partido>
+        <contricantes>
+            <equipo1>Santos</equipo1>
+            <equipo2>León</equipo2>
+        </contricantes>
+        <ganador>León</ganador>
+        <anotaciones>
+            <anotacionesEquipo1 total="1">F Gorriarán(32'PEN)</anotacionesEquipo1>
+            <anotacionesEquipo2 total="2">Á Mena(24'PEN), F Navarro(59')</anotacionesEquipo2>
+        </anotaciones>
+    </partido>
+</partidos>
