@@ -18,6 +18,7 @@ Crear el documento DTD para validar el documento XML con los resultados de los p
 
 <partidos>
     <partido>
+        <fecha>21 de Marzo, 2021</fecha>
         <contricantes>
             <equipo1>Toluca</equipo1>
             <equipo2>Puebla</equipo2>   
@@ -30,6 +31,7 @@ Crear el documento DTD para validar el documento XML con los resultados de los p
     </partido>
         
     <partido>
+        <fecha>21 de Marzo, 2021</fecha>
         <contricantes>
             <equipo1>Santos</equipo1>
             <equipo2>León</equipo2>
