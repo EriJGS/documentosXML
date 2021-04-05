@@ -23,10 +23,13 @@
 <!ELEMENT partidos (partido)*>
 
 <!--- Put your DTDDoc comment here. -->
-<!ELEMENT partido (contricantes|ganador|anotaciones)*>
+<!ELEMENT partido (fecha,contricantes,ganador,anotaciones)>
 
 <!--- Put your DTDDoc comment here. -->
-<!ELEMENT contricantes (equipo1|equipo2)*>
+<!ELEMENT fecha (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT contricantes (equipo1,equipo2)>
 
 <!--- Put your DTDDoc comment here. -->
 <!ELEMENT equipo1 (#PCDATA)>
@@ -38,16 +41,19 @@
 <!ELEMENT ganador (#PCDATA)>
 
 <!--- Put your DTDDoc comment here. -->
-<!ELEMENT anotaciones (anotacionesEquipo1|anotacionesEquipo2)*>
+<!ELEMENT anotaciones (anotacionesEquipo1,anotacionesEquipo2)*>
 
 <!--- Put your DTDDoc comment here. -->
-<!ELEMENT anotacionesEquipo1 (#PCDATA)>
-<!ATTLIST anotacionesEquipo1
-    total CDATA #IMPLIED
-  >
+<!ELEMENT anotacionesEquipo1 (anotador)*>
 
 <!--- Put your DTDDoc comment here. -->
-<!ELEMENT anotacionesEquipo2 (#PCDATA)>
-<!ATTLIST anotacionesEquipo2
-    total CDATA #IMPLIED
-  >
+<!ELEMENT anotador (nombre,minuto)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT nombre (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT minuto (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT anotacionesEquipo2 (anotador)*>

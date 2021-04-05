@@ -17,6 +17,7 @@ Crear el documento DTD para validar el documento XML con los resultados de los p
 -->
 
 <partidos>
+    
     <partido>
         <fecha>21 de Marzo, 2021</fecha>
         <contricantes>
@@ -25,8 +26,39 @@ Crear el documento DTD para validar el documento XML con los resultados de los p
         </contricantes>
         <ganador>Empate</ganador>
         <anotaciones>
-            <anotacionesEquipo1 total="4">M Estrada(33',88'), P Canelo(54'PEN), Diego(78')</anotacionesEquipo1>
-            <anotacionesEquipo2 total="4">S Ormeño(58'PEN), J Segovia(61'), D Aguilar(87'), D Álvarez(90')</anotacionesEquipo2>
+            <anotacionesEquipo1>
+                <anotador>
+                   <nombre>M Estrada</nombre>
+                   <minuto>(33',88')</minuto> 
+                </anotador>
+                <anotador>
+                   <nombre>P Canelo</nombre>
+                   <minuto>(54'PEN)</minuto> 
+                </anotador>
+                <anotador>
+                   <nombre>Diego</nombre>
+                   <minuto>(78')</minuto> 
+                </anotador>
+            </anotacionesEquipo1>
+                
+            <anotacionesEquipo2>
+                <anotador>
+                   <nombre>S Ormeño</nombre>
+                   <minuto>(58'PEN)</minuto> 
+                </anotador>
+                <anotador>
+                   <nombre>J Segovia</nombre>
+                   <minuto>(61')</minuto> 
+                </anotador>
+                <anotador>
+                   <nombre>D Aguilar</nombre>
+                   <minuto>(87')</minuto> 
+                </anotador>
+                <anotador>
+                   <nombre>D Álvarez</nombre>
+                   <minuto>(90')</minuto> 
+                </anotador>
+            </anotacionesEquipo2>
         </anotaciones>
     </partido>
         
@@ -38,8 +70,24 @@ Crear el documento DTD para validar el documento XML con los resultados de los p
         </contricantes>
         <ganador>León</ganador>
         <anotaciones>
-            <anotacionesEquipo1 total="1">F Gorriarán(32'PEN)</anotacionesEquipo1>
-            <anotacionesEquipo2 total="2">Á Mena(24'PEN), F Navarro(59')</anotacionesEquipo2>
+            <anotacionesEquipo1>
+                <anotador>
+                   <nombre>F Gorriarán</nombre>
+                   <minuto>(32'PEN)</minuto> 
+                </anotador>
+            </anotacionesEquipo1>
+            
+            <anotacionesEquipo2>
+                <anotador>
+                   <nombre>Á Mena</nombre>
+                   <minuto>(24'PEN)</minuto> 
+                </anotador>
+                <anotador>
+                   <nombre>F Navarro</nombre>
+                   <minuto>(59')</minuto> 
+                </anotador>
+            </anotacionesEquipo2>
         </anotaciones>
     </partido>
+    
 </partidos>
